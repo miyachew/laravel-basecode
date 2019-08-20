@@ -5,12 +5,10 @@
         </a>
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-                <li class="dropdown user user-menu">
-                        <span class="hidden-xs">{{ Auth::user()->email }}</span>
-                        <li class="user-body"><a href="{{ route('logout') }}">Logout</a></li>
-                    </ul>
-                </li>
+                <li><span class="hidden-xs">{{ Auth::user()->email }}</span></li>
+                <li><a href="{{ route('logout') }}">Logout</a></li>
             </ul>
         </div>
     </nav>
+    <hr>
 </header>
